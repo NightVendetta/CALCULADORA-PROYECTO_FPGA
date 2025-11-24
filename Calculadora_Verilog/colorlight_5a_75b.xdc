@@ -1,0 +1,60 @@
+# Colorlight 5A-75B Constraints File
+# Clock (25MHz oscillator on board)
+set_property PACKAGE_PIN H11 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+
+# UART (FT232RL connection)
+set_property PACKAGE_PIN A12 [get_ports uart_rx]  
+set_property IOSTANDARD LVCMOS33 [get_ports uart_rx]
+set_property PACKAGE_PIN B12 [get_ports uart_tx]
+set_property IOSTANDARD LVCMOS33 [get_ports uart_tx]
+
+# 7-Segment Display (adjust based on your actual display connections)
+set_property PACKAGE_PIN A1 [get_ports {segment_cathodes[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segment_cathodes[0]}]
+set_property PACKAGE_PIN A2 [get_ports {segment_cathodes[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segment_cathodes[1]}]
+set_property PACKAGE_PIN A3 [get_ports {segment_cathodes[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segment_cathodes[2]}]
+set_property PACKAGE_PIN A4 [get_ports {segment_cathodes[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segment_cathodes[3]}]
+set_property PACKAGE_PIN A5 [get_ports {segment_cathodes[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segment_cathodes[4]}]
+set_property PACKAGE_PIN A6 [get_ports {segment_cathodes[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segment_cathodes[5]}]
+set_property PACKAGE_PIN A7 [get_ports {segment_cathodes[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segment_cathodes[6]}]
+set_property PACKAGE_PIN A8 [get_ports {segment_cathodes[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segment_cathodes[7]}]
+
+set_property PACKAGE_PIN B1 [get_ports {segment_anodes[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segment_anodes[0]}]
+set_property PACKAGE_PIN B2 [get_ports {segment_anodes[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segment_anodes[1]}]
+set_property PACKAGE_PIN B3 [get_ports {segment_anodes[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segment_anodes[2]}]
+set_property PACKAGE_PIN B4 [get_ports {segment_anodes[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {segment_anodes[3]}]
+
+# Status LEDs
+set_property PACKAGE_PIN C1 [get_ports {leds[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds[0]}]
+set_property PACKAGE_PIN C2 [get_ports {leds[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds[1]}]
+set_property PACKAGE_PIN C3 [get_ports {leds[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds[2]}]
+set_property PACKAGE_PIN C4 [get_ports {leds[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds[3]}]
+set_property PACKAGE_PIN C5 [get_ports {leds[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds[4]}]
+set_property PACKAGE_PIN C6 [get_ports {leds[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds[5]}]
+set_property PACKAGE_PIN C7 [get_ports {leds[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds[6]}]
+set_property PACKAGE_PIN C8 [get_ports {leds[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds[7]}]
+
+# Reset button
+set_property PACKAGE_PIN D9 [get_ports reset_n]
+set_property IOSTANDARD LVCMOS33 [get_ports reset_n]
+set_property PULLUP true [get_ports reset_n]
