@@ -30,7 +30,7 @@ Lo que se hizo fue crear todos los módulos usando como referencia los modulos h
 ###  Simulaciones:
 - Las pruebas que se hicieron para verificar que todo se diseñó correctamente
 - Capturas de las waveforms de GTKWave
-
+- Codigos para implementacion en FPGA mediante minicom (este apartado sigue como prototipo ya que la FPGA presentó problemas con los pines)
 ## Plataformas utilizadas
 
 Usamos Icarus Verilog para compilar y simular, y GTKWave para ver los resultados. 
